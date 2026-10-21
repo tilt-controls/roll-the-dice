@@ -12,6 +12,7 @@ public class RollCounterApp {
         int counter6 = 0;
         int counter7 = 0;
 
+        // Roll dice 100 times, if sum meets conditions then add 1 to counter
         for (int i = 1; i < 101; i++) {
             roll1 = dice.roll();
             roll2 = dice.roll();
@@ -28,6 +29,14 @@ public class RollCounterApp {
             }
 
         }
+        // Print results
+        System.out.println();
+        System.out.println("===RESULTS===");
+        System.out.printf("""
+                Counter 2: %d
+                Counter 4: %d
+                Counter 6: %d
+                Counter 7: %d""", counter2, counter4, counter6, counter7);
 
     }
 }
